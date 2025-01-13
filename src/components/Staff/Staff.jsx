@@ -55,7 +55,7 @@ export default function Staff() {
                             <div className={styles.memberInfo}>
                                 <p className={styles.memberName}>{member.name}</p>
                                 <p className={styles.memberRole}>{member.role}</p>
-                                <a href={member.url} target="_blank" className={styles.memberBtn}>Read More</a>
+                                <a href={member.url} target="_blank" className={styles.memberBtn} aria-label={`Read more about ${member.name}`}>Read More</a>
                             </div>
                         </div>
                     ))}

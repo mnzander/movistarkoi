@@ -26,7 +26,7 @@ export default function Modal() {
                 </button>
                 <img 
                     className={styles.modalImg}
-                    src={getImageUrl("/modal/banner.png")} 
+                    src={getImageUrl("/modal/banner.webp")} 
                     alt="KOI Shirt 2025" 
                 />
             </div>

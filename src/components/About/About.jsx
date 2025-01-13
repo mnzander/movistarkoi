@@ -29,6 +29,7 @@ export default function About() {
                 }
               }}
               className={styles.customVideoPlayer}
+              aria-label="KOI LEC Video"
           />
         </div>
     </section>

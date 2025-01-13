@@ -14,12 +14,12 @@ export default function Schedule() {
         <div className={styles.imgContainer} onClick={urlRedirect}>
             <img 
               className={styles.calendarImg} 
-              src={getImageUrl("/schedule/calendar.PNG")} 
+              src={getImageUrl("/schedule/calendar.webp")} 
               alt="KOI LEC Calendar"
             />
             <img 
               className={styles.verticalCalendarImg} 
-              src={getImageUrl("schedule/calendarVertical.png")} 
+              src={getImageUrl("schedule/calendarVertical.webp")} 
               alt="KOI LEC Calendar" 
             />
         </div>
