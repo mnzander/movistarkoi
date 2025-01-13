@@ -1,0 +1,13 @@
+:root {
+/* Colours */
+--color-dark: #121c2c;
+--color-primary: #f2f2f0;
+--color-purple: #6f4daa;
+--color-darkblue: #2f4ed7;
+--color-lightblue: #0385ff;
+--color-logo: #4b9cec;
+
+/* Fonts */
+--font-roboto: "Exo-2";
+--font-oswald: "Oswald";
+}

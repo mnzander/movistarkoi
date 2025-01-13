@@ -1,0 +1,119 @@
+@import "../../vars.css";
+
+.container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 5% 10% 0% 10%;
+    gap: 100px
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 50%;
+    gap: 20px
+}
+
+.title {
+    font-family: var(--font-oswald);
+    font-size: 90px;
+    font-weight: 500;
+    color: var(--color-darkblue);
+    text-transform: uppercase;
+}
+
+.description {
+    font-size: 25px;
+    margin-bottom: 35px;
+    color: var(--color-dark);
+}
+
+.seeMoreBtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    border-radius: 100px;
+    font-size: 30px;
+    font-weight: 600;
+    color: var(--color-darkblue);
+    font-family: var(--font-oswald);
+    letter-spacing: 4px;
+    padding: 17px 26px;
+    text-transform: uppercase;
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, .1);
+    background: linear-gradient(to right, var(--color-primary) 50%, var(--color-darkblue) 50%);
+    background-size: 200% 100%;
+    transition: background-position 0.5s ease-in-out, color 0.5s ease-in-out;
+    
+    &:hover {
+        cursor: pointer;
+        background-position: -100% 0;
+        color: var(--color-primary);
+        animation: pulse 1.5s;
+    }
+}
+
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.7);
+    }
+    70% {
+        box-shadow: 0 0 30px 30px rgba(0, 0, 0, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+    }
+}
+
+.videoWrapper {
+    position: relative;
+    width: 42%;
+    height: 350px;
+    overflow: hidden;
+    border: 10px solid var(--color-primary);
+}
+
+.videoWrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+@media screen and (max-width: 950px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .content {
+        width: auto;
+        margin-top: 50px;
+        align-items: center;
+    }
+
+    .title {
+        font-size: 9.5vw;
+    }
+
+    .description {
+        font-size: 4vw;
+    }
+
+    .seeMoreBtn {
+        font-size: 6vw;
+    }
+
+    .videoWrapper {
+        position: relative;
+        width: 90%;
+        height: 200px;
+        overflow: hidden;
+        margin-top: -3vh;
+        margin-bottom: 3vh;
+    }
+}

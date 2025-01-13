@@ -1,0 +1,107 @@
+@import "../../vars.css";
+
+.container {
+    margin: 5% 10%;
+}
+
+.title {
+    font-family: var(--font-oswald);
+    font-size: 60px;
+    color: var(--color-darkblue);
+    margin-bottom: 25px;
+}
+
+.subtitle {
+    font-family: var(--font-oswald);
+    letter-spacing: 2px;
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+
+.imgContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+
+.calendarImg {
+    width: 100%;
+    height: auto;
+    border: 5px solid var(--color-lightblue);
+    border-radius: 20px;
+    transition: transform 0.3s ease;
+}
+
+.verticalCalendarImg {
+    display: none;
+}
+
+.imgContainer::after {
+    content: "Click here to see the entire calendar";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.6);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.imgContainer:hover::after {
+    opacity: 1;
+    cursor: crosshair;
+    animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.7);
+    }
+    70% {
+        box-shadow: 0 0 30px 30px rgba(0, 0, 0, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .container{
+        margin-top: 15%;
+    }
+
+    .title {
+        font-size: 12vw;
+    }
+
+    .subtitle{
+        display: none;
+    }
+
+    .calendarImg {
+        display: none;
+
+    }
+
+    .imgContainer::after {
+        display: none;
+
+    }
+
+    .verticalCalendarImg {
+        display: flex;
+        place-self: center;
+        width: 35%;
+        border-radius: 20px;
+    }
+}

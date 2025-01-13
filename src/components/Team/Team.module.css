@@ -1,0 +1,196 @@
+@import "../../vars.css";
+
+.container {
+    margin-top: 5%;
+    margin-left: 10%;
+    margin-right: 10%;
+    background-color: rgba(18, 28, 44, 0.85);
+    border-radius: 20px;
+    padding: 50px;
+}
+
+.title {
+    position: absolute;
+    font-family: var(--font-oswald);
+    font-size: 50px;
+    letter-spacing: 1.75px;
+    color: var(--color-primary);
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    gap: 5%;
+    align-items: center;
+}
+
+.mapImg {
+    width: 45%;
+    height: 100%;
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    z-index: 1;
+
+    &:hover {
+        cursor: crosshair;
+    }
+}
+
+@keyframes floating {
+    0% {
+        transform: translate(0, 0px);
+    }
+    50% {
+        transform: translate(0, 20px);
+    }
+    100% {
+        transform: translate(0, -0px);
+    }
+}
+
+.bottomBlur {
+    position: absolute;
+    width: 20vw;
+    height: 10vw;
+    top: 1400px;
+    left: 20vw;
+    border-radius: 764px;
+    background: var(--color-dark);
+    filter: blur(100px);
+    z-index: 0;
+}
+
+.playerLink {
+    text-decoration: none;
+}
+
+.playersList {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.playerItem {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    list-style: none;
+    padding: 20px;
+    border-radius: 20px;
+    background-image: linear-gradient(
+        90deg,
+        rgba(165, 215, 232, 0.4) 0%,
+        rgba(255, 255, 255, 0) 100%
+    );
+    background-size: 0 100%;
+    background-repeat:no-repeat;
+    transition: .4s;
+
+    &:hover {
+       background-size: 100% 100%; 
+    }
+}
+
+.playerImg {
+    width: auto;
+    height: 140px;
+    border-radius: 5px;
+    transition: .4s;
+
+    &:hover {
+        cursor: crosshair;
+    }
+}
+
+.playerInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: var(--color-primary);
+}
+
+.playerName {
+    font-size: 21px;
+    letter-spacing: 1.5px;
+}
+
+.playerPositionContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+}
+
+.roleIcon {
+    width: 20px;
+    height: 20px;
+}
+
+.playerPosition{
+    font-size: 16px;
+    letter-spacing: 1.5px;
+}
+
+@media screen and (max-width: 950px) {
+
+    .container {
+        margin-top: 75px;
+        padding: 25px 5px 25px 5px;
+    }
+
+    .content {
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .title {
+        position: relative;
+        margin-bottom: 50px;
+        font-size: 8vw;
+        place-self: center;
+    }
+
+    .mapImg {
+        width: 100%;
+        height: auto;
+    }
+
+    .playersList {
+        gap: 3vh;
+    }
+
+    .playerItem {
+        flex-direction: column;
+        justify-content: center;
+        gap: 2vh;
+    }
+
+    .playerImg {
+        width: 100%;
+        height: auto;
+    }
+
+    .playerInfo {
+        justify-content: center;
+    }
+
+    .playerName {
+        font-size: 4vw;
+    }
+
+    .playerPositionContainer {
+        flex-direction: row-reverse;
+        justify-content: start;
+    }
+
+    .roleIcon {
+        width: 5vw;
+        height: 5vw;
+    }
+    
+    .playerPosition{
+        font-size: 4vw;
+    }
+}

@@ -1,0 +1,134 @@
+@import "../../vars.css";
+
+.container {
+    color: var(--color-primary);
+    margin-top: 5%;
+    background: var(--color-darkblue);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    padding: 100px 10%;
+    gap: 10px;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.text h2 {
+    font-size: 100px;
+    font-weight: 700;
+    letter-spacing: 4px;
+}
+
+.text p {
+    font-size: 35px;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    list-style: none;
+    gap: 26px;
+}
+
+.link {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.logoImg {
+    width: 50px;
+    height: auto;
+}
+
+.twitterLogo, .discordLogo, .youtubeLogo {
+    border-radius: 13px;
+}
+
+.discordLogo, .youtubeLogo {
+    background: var(--color-primary);
+}
+
+.youtubeLogo {
+    padding: 4px;
+}
+
+.link a {
+    color: var(--color-primary);
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: 400;
+    letter-spacing: 1.5px;
+    padding: 10px;
+
+    &:hover {
+        background-color: var(--color-lightblue);
+        border-radius: 10px;
+        animation-name: transform;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in-out;
+    }
+}
+
+@keyframes transform {
+    0% {
+        transform:scale(1)
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .container {
+        margin-top: 10vh;
+        flex-direction: column;
+        gap: 6vh;
+    }
+
+    .text {
+        align-items: center;
+        justify-content: center;
+        gap: 3vh;
+    }
+
+    .text h2 {
+        font-size: 14vw;
+        letter-spacing: 1vw;
+    }
+
+    .text p {
+        font-size: 6vw;
+        letter-spacing: .5vw;
+    }
+
+    .links {
+        gap: 4vh;
+    }
+
+    .logoImg {
+        width: 10vw;
+        height: auto;
+    }
+
+    .link {
+        gap: 2vw;
+    }
+
+    .link a {
+        font-size: 4vw;
+    }
+}

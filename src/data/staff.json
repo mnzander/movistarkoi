@@ -1,0 +1,58 @@
+[
+    {
+        "id": 1,
+        "name": "Ibai Llanos",
+        "role": "Co-owner",
+        "image": "/staff/ibai.webp",
+        "url": "https://x.com/IbaiLlanos"
+    },
+    {
+        "id": 2,
+        "name": "Antonio 'Reven' Pino",
+        "role": "Content Creator, Analyst",
+        "image": "/staff/reven.webp",
+        "url": "https://x.com/reventxz"
+    },
+    {
+        "id": 3,
+        "name": "Sergio 'Knekro' García",
+        "role": "Content Creator, Analyst",
+        "image": "/staff/knekro.webp",
+        "url": "https://x.com/knekro"
+    },
+    {
+        "id": 4,
+        "name": "Jaime Mellado",
+        "role": "Content Creator, Caster",
+        "image": "/staff/mellado.webp",
+        "url": "https://x.com/jaimemellado_"
+    },
+    {
+        "id": 5,
+        "name": "David 'Skain' Carbó",
+        "role": "Content Creator, Analyst",
+        "image": "/staff/skain.webp",
+        "url": "https://x.com/skain24"
+    },
+    {
+        "id": 6,
+        "name": "Alejandro 'Kuentin' Cotrina",
+        "role": "Content Creator, Analyst",
+        "image": "/staff/kuentin.webp",
+        "url": "https://x.com/kuentinlol"
+    },
+    {
+        "id": 7,
+        "name": "Tomás 'Melzhet' Campelos",
+        "role": "Head Coach",
+        "image": "/staff/melzhet.webp",
+        "url": "https://x.com/melzhet"
+    },
+    {
+       "id": 8,
+       "name": "Quentin 'Zeph' Viguié",
+       "role": "Assistant Coach, Substitute",
+       "image": "/staff/zeph.webp" ,
+        "url": "https://x.com/melzhet"
+    }
+]

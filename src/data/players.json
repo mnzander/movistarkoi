@@ -1,0 +1,57 @@
+[
+    {
+        "id": 1,
+        "name": "Alex 'Myrwn' Pastor Villarejo",
+        "nickname": "Myrwn",
+        "position": "Top",
+        "age": 21,
+        "nationality": "Spain",
+        "photo": "/team/myrwn.webp",
+        "roleIcon": "/team/top.webp",
+        "url": "https://x.com/Myrwnn"
+    },
+    {
+        "id": 2,
+        "name": "Javier 'Elyoya' Prades Batalla",
+        "nickname": "Elyoya",
+        "position": "Jungle",
+        "age": 24,
+        "nationality": "Spain",
+        "photo": "/team/elyoya.webp",
+        "roleIcon": "/team/jgl.webp",
+        "url": "https://x.com/elyoya_lol"
+    },
+    {
+        "id": 3,
+        "name": "Joseph 'Jojopyun' Joon Pyun",
+        "nickname": " Jojopyun",
+        "position": "Mid",
+        "age": 20,
+        "nationality": "Canada",
+        "photo": "/team/jojopyun.webp",
+        "roleIcon": "/team/mid.webp",
+        "url": "https://x.com/jojopyunlol"
+    },
+    {
+        "id": 4,
+        "name": "David 'Supa' Martínez García",
+        "nickname": "Supa",
+        "position": "Adc",
+        "age": 24,
+        "nationality": "Spain",
+        "photo": "/team/supa.webp",
+        "roleIcon": "/team/adc.webp",
+        "url": "https://x.com/Supa_LoL"
+    },
+    {
+        "id": 5,
+        "name": "Alvaro 'Alvaro' Fernández del Amo",
+        "nickname": "Alvaro",
+        "position": "Support",
+        "age": 21,
+        "nationality": "Spain",
+        "photo": "/team/alvaro.webp",
+        "roleIcon": "/team/supp.webp",
+        "url": "https://x.com/AlVaRo710_"
+    }
+]

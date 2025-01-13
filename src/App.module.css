@@ -1,0 +1,28 @@
+@import "./vars.css";
+
+.App {
+    background: linear-gradient(
+        0deg,
+        rgba(75, 156, 236, 0.1) 0%,
+        rgba(75, 156, 236, .75) 40%,
+        rgba(111, 77, 170, .75) 70%,
+        rgba(75, 156, 236, .75) 90%,
+        rgba(75, 156, 236, 0.1) 100%
+    );
+    width: 100%;
+    height: 100%;
+    color: black;
+}
+
+@media screen and (max-width: 950px) {
+    .App {
+        background: linear-gradient(
+            0deg,
+            rgba(75, 156, 236, 0.1) 0%,
+            rgba(75, 156, 236, .75) 40%,
+            rgba(111, 77, 170, .75) 82%,
+            rgba(75, 156, 236, .75) 95%,
+            rgba(75, 156, 236, 0.1) 100%
+        );
+    }
+}

@@ -1,0 +1,22 @@
+.container {
+    position: fixed;
+    bottom: 20px;
+    right: 2%;
+}
+
+.arrowImg {
+    width: 55px;
+    padding: 4px;
+    background-color: var(--color-dark);
+}
+
+@media screen and (max-width: 950px) {
+    .container {
+        right: 2vw;
+        bottom: 10px;
+    }
+    
+    .arrowImg {
+        width: 6vw;
+    }
+}
