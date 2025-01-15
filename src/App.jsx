@@ -7,11 +7,12 @@ import Schedule from './components/Schedule/Schedule'
 import Staff from './components/Staff/Staff'
 import Team from './components/Team/Team'
 import UpButton from './components/UpButton/UpButton'
+import 'animate.css';
 
 function App() {
 
   return (
-    <div className={styles.App} id="top">
+    <div className={`${styles.App} animate__animated animate__fadeIn`} id="top">
       <Navbar />
       <About />
       <Team />

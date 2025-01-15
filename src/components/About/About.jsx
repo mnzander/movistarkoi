@@ -1,12 +1,13 @@
 import YouTube from "react-youtube"
 import styles from "./About.module.css"
+import "animate.css"
 
 export default function About() {
 
   return (
     <section className={styles.container} id="about">
         <div className={styles.content}>
-            <h1 className={styles.title}>This is Movistar KOI</h1>
+        <h1 className={`${styles.title} animate__animated`}>This is Movistar KOI</h1>
             <p className={styles.description}>
             We are one of the premier esports clubs in Europe, proudly competing in the LEC—the continent&apos;s most prestigious league.<br /><br />With a dedicated professional team, we represent the brand on the global stage, participating in some of the world&apos;s most renowned esports tournaments.
             </p>

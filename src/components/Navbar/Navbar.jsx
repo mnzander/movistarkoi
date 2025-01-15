@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { getImageUrl } from "../../utils";
-import styles from "./Navbar.module.css"
+import styles from "./Navbar.module.css";
+import 'animate.css';
 
 export default function Navbar() {
     const [menuOpen, setMenuOpen] = useState(false);
@@ -9,7 +10,7 @@ export default function Navbar() {
     <header>
         <nav className={styles.navbar}>
             <a href="#top">
-                <img className={styles.logoImage} src={getImageUrl("/navbar/mkoi-logo.webp")} alt="Movistar KOI logo" />
+                <img className={`${styles.logoImage} animate__animated animate__flip`} src={getImageUrl("/navbar/mkoi-logo.webp")} alt="Movistar KOI logo" />
             </a>
             <div className={styles.menu}>
                 <img 

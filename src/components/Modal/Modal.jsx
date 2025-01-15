@@ -6,7 +6,7 @@ export default function Modal() {
     const [isOpen, setIsOpen] = useState(false);
 
     useEffect(() => {
-        const timer = setTimeout(() => setIsOpen(true), 1000);
+        const timer = setTimeout(() => setIsOpen(true), 1500);
         return () => clearTimeout(timer);
     }, [])
     
